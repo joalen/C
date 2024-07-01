@@ -74,7 +74,7 @@ jobs:
           files=$(find . -type f)
           failed_compilations=0
           successful_compilations=0
-          TIMEOUT_DURATION=60
+          TIMEOUT_DURATION=10
 
           for file in $files; do
               if [[ "$file" == *.c || "$file" == *.cpp ]]; then
